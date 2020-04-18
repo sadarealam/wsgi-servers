@@ -7,8 +7,13 @@ fi
 
 case "$1" in
   run)
-    python app/manage.py collectstatic --noinput
     exec python app/run.py
+    ;;
+  migrate)
+    python app/manage.py migrate --noinput
+    ;;
+  collectstatic)
+    python app/manage.py collectstatic --noinput
     ;;
   *)
     exec "$@"
