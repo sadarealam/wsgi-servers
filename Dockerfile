@@ -13,11 +13,4 @@ RUN echo "**** install Python ****" && \
     apk add --no-cache --virtual .build-deps gcc g++ musl-dev libffi-dev libev-dev libc-dev linux-headers python3-dev && \
     pip install --no-cache-dir mysqlclient bjoern whitenoise Brotli && \
     apk del .build-deps && \
-    rm -Rf ~/.cache && \
-    mkdir -p /project
-
-COPY script/entrypoint.sh /entrypoint.sh
-
-WORKDIR /project
-ENTRYPOINT ["/entrypoint.sh"]
-CMD ["run"]
+    rm -Rf ~/.cache
