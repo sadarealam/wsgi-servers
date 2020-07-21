@@ -19,9 +19,9 @@ jobs:
       run: echo ::set-output name=tag::$(echo ${GITHUB_REF:10})
     - name: Build the tagged Docker image
       run: docker build . --file Dockerfile --tag yesalam/django-bjoern-whitenoise:${{ steps.vars.outputs.tag }}
+    - name: Build the tagged Docker image with shaply
+      run: docker build . --file Dockerfile_Staff --tag yesalam/bjoern-whitenoise-shaply:${{ steps.vars.outputs.tag }}
     - name: Push the tagged Docker image
       run: docker push yesalam/django-bjoern-whitenoise:${{ steps.vars.outputs.tag }}
-    - name: Build the latest Docker image
-      run: docker build . --file Dockerfile --tag yesalam/django-bjoern-whitenoise:latest
-    - name: Push the latest Docker image
-      run: docker push yesalam/django-bjoern-whitenoise:latest
+    - name: Push the tagged Docker image with shaply
+      run: docker push yesalam/bjoern-whitenoise-shaply:${{ steps.vars.outputs.tag }}
