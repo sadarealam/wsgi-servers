@@ -1,2 +1,2 @@
-whitenoise=5.1.0 
-Brotli=1.0.7
+whitenoise==5.1.0 
+Brotli==1.0.7
