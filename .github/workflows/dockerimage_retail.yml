@@ -21,6 +21,6 @@ jobs:
     - name: Login to DockerHub Registry
       run: echo ${{ secrets.DOCKERHUB_PASSWORD }} | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
     - name: Build the tagged Docker image for retail
-      run: docker build . --file Dockerfile_staff --tag yesalam/retail-wrapper-image:${{ github.event.inputs.tag }}
+      run: docker build . --file Dockerfile_retail --tag yesalam/retail-wrapper-image:${{ github.event.inputs.tag }}
     - name: Push the tagged Docker image for retail
       run: docker push yesalam/retail-wrapper-image:${{ github.event.inputs.tag }}
