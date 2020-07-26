@@ -33,6 +33,5 @@ uritemplate==3.0.1
 urllib3==1.25.8
 whitenoise==5.1.0
 django-request-logging==0.7.1
-django-smart-selects.tar.gz
 django-silk==4.0.1
 django-health-check==3.12.1
