@@ -21,6 +21,6 @@ jobs:
     - name: Login to DockerHub Registry
       run: echo ${{ secrets.DOCKERHUB_PASSWORD }} | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
     - name: Build the tagged Docker image with shaply
-      run: docker build . --file Dockerfile_staff --tag yesalam/bjoern-whitenoise-shaply:${{ github.event.inputs.tag }}
+      run: docker build . --file Dockerfile_staff --tag yesalam/staff-wrapper-image:${{ github.event.inputs.tag }}
     - name: Push the tagged Docker image with shaply
-      run: docker push yesalam/bjoern-whitenoise-shaply:${{ github.event.inputs.tag }}
+      run: docker push yesalam/staff-wrapper-image:${{ github.event.inputs.tag }}
