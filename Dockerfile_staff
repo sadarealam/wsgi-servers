@@ -14,7 +14,7 @@ RUN echo "http://mirror.leaseweb.com/alpine/edge/community" >> /etc/apk/reposito
     rm -r /usr/lib/python*/ensurepip && \
     pip3 install --no-cache --upgrade pip setuptools wheel && \
     if [ ! -e /usr/bin/pip ]; then ln -s pip3 /usr/bin/pip ; fi && \
-    apk add --no-cache mariadb-dev libev-dev jpeg-dev zlib-dev libxml2-dev libxslt-dev && \
+    apk add --no-cache mariadb-dev libev-dev jpeg-dev zlib-dev libxml2-dev libxslt-dev postgresql-dev && \
     apk add --no-cache --virtual .build-deps gcc g++ musl-dev libffi-dev libc-dev linux-headers python3-dev && \
     pip install --no-cache-dir  pip install lxml pillow && \
     apk add --virtual .build-deps-temp \
