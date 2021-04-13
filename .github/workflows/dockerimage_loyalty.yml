@@ -1,4 +1,4 @@
-name: Docker Image CI For glpadmin
+name: Docker Image CI For loyalty
 
 on:
   workflow_dispatch:
