@@ -43,4 +43,4 @@ djangorestframework-simplejwt==4.4.0
 django-silk==4.0.1
 django-dotenv==1.4.2
 hvac[parser]==0.10.8
-scikit-learn==0.24.2
+scikit-learn==0.23.2
