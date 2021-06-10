@@ -50,5 +50,5 @@ zope.event==4.5.0
 zope.interface==5.4.0
 hvac==0.10.14
 django-health-check==3.16.4
-djangorestframework_simplejwt==4.7.0
+djangorestframework_simplejwt==4.4.0
 PyJWT==1.7.1
