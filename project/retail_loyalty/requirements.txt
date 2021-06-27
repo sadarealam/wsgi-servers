@@ -16,7 +16,7 @@ django-health-check==3.16.4
 django-storages==1.11.1
 django-svg-image-form-field==1.0.1
 djangorestframework==3.12.4
-djangorestframework-simplejwt==4.4.0
+djangorestframework-simplejwt==4.6.0
 drf-yasg==1.20.0
 future==0.18.2
 hvac==0.10.14
