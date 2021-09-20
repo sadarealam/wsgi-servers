@@ -29,7 +29,7 @@ django-dotenv==1.4.2
 django-request-logging==0.7.1
 django-silk==4.1.0
 djangorestframework==3.11.0
-djangorestframework-simplejwt==4.4.0
+djangorestframework-simplejwt==4.8.0
 drf-yasg==1.17.1
 et-xmlfile==1.1.0
 firebase-admin==5.0.2
