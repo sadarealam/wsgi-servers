@@ -1,0 +1,13 @@
+Django==4.*
+djangorestframework==3.13.*
+mysqlclient==2.1.0
+requests==2.23.0
+django-request-logging==0.7.5
+whitenoise==5.0.1
+drf-yasg==1.20.0
+django-cors-headers==3.3.0
+django-dotenv==1.4.2
+djangorestframework-simplejwt==4.8.0
+hvac[parser]==0.10.8
+httpx==0.22.0
+daphne==3.*
