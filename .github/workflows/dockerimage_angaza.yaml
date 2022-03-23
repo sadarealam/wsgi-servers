@@ -1,0 +1,26 @@
+name: Docker Image CI For angaza ms
+
+on:
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'     
+        required: true
+        default: 'warning'
+      tag:
+        description: 'Test scenario tags'  
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Login to DockerHub Registry
+      run: echo ${{ secrets.DOCKERHUB_PASSWORD }} | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
+    - name: Build the tagged Docker image for angaza ms
+      run: docker build . --file Dockerfile_angaza --tag yesalam/angaza-ms-wrapper-image:${{ github.event.inputs.tag }}
+    - name: Push the tagged Docker image for angaza ms
+      run: docker push yesalam/angaza-ms-wrapper-image:${{ github.event.inputs.tag }}
