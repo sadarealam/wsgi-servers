@@ -100,3 +100,4 @@ wcwidth==0.2.5
 whitenoise==5.0.1
 yarl==1.6.3
 zenpy==2.0.24
+daphne==3.*
