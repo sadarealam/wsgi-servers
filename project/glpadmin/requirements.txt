@@ -10,7 +10,6 @@ djangorestframework-simplejwt==4.8.0
 hvac==0.11.2
 daphne==3.0.2
 requests-futures==1.0.0
-zenpy==2.0.24
 celery==5.2.6
 boto3==1.21.37
 django-silk==4.3.0
@@ -34,3 +33,5 @@ pyhcl==0.4.4
 rope==0.16.0
 threadpoolctl==2.2.0
 wcwidth==0.2.5
+tzdata==2022.1
+django-storages==1.12.3
