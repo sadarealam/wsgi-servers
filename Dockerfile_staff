@@ -26,9 +26,6 @@ RUN echo "http://mirror.leaseweb.com/alpine/edge/community" >> /etc/apk/reposito
         | xargs -r apk info --installed \
         | sort -u)" && \
     apk add --virtual .rundeps $runDeps && \
-    pip install --no-cache-dir -r /requirements-bjoern.txt && \
-    pip install --no-cache-dir -r /requirements-static_server.txt && \
-    pip install --no-cache-dir -r /requirements-db-mysql.txt && \
     pip install --no-cache-dir -r /staff/requirements.txt && \
     apk del .build-deps && \
     rm -Rf ~/.cache
