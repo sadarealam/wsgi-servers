@@ -17,7 +17,6 @@ chardet==3.0.4
 django-admin-autocomplete-filter==0.7.1
 django-admin-list-filter-dropdown==1.0.3
 django-health-check==3.12.1
-django-smart-selects.tar.gz
 future==0.18.2
 PyYAML==6.0
 whitenoise==5.1.0
