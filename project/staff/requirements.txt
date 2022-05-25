@@ -11,6 +11,6 @@ hvac[parser]==0.11.2
 whitenoise==6.0.0
 gspread==5.3.0
 
-PyJWT==2.3.0
+PyJWT==2.4.0
 django-silk
 bjoern==3.1.0
